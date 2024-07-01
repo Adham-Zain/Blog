@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahma Farara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>قم بنشر مقالتك</h1>
+
+        <form id="article-form">
+            <label for="author-name">: اسم الكاتب</label>
+            <input type="text" id="author-name" required>
+
+            <label for="author-age">: السن</label>
+            <input type="number" id="author-age" required>
+
+            <label for="author-country">: الدولة</label>
+            <input type="text" id="author-country" required>
+
+            <label for="article-content">: محتوى المقالة</label>
+            <textarea id="article-content" rows="4" required></textarea>
+
+            <button type="submit" id="publish-btn">نشر المقالة</button>
+        </form>
+
+        <div id="articles-list" class="articles-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
